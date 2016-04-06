@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HomeWork2</string>
+    <string-array name="birth_place">
+        <item>Bắc Giang</item>
+        <item>Hà Nội</item>
+        <item>Hà Nam</item>
+        <item>Hải Dương</item>
+        <item>Hưng Yên</item>
+        <item>Hòa Bình</item>
+        <item>Nam Định</item>
+        <item>Ninh Bình</item>
+    </string-array>
+
+    <string name="title_activity_view_student">viewStudentActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

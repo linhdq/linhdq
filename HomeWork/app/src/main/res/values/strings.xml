@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HomeWork</string>
+    <string name="red">R</string>
+    <string name="blue">B</string>
+    <string name="green">G</string>
+    <string name="localtion">Hà Nội</string>
+    <string name="status">Trời nắng</string>
+
+    //me
+    <string name="nameMe">Họ và tên: Đào Quang Linh</string>
+    <string name="schoolMe">Trường: FPT University</string>
+    <string name="birthMe">Năm sinh: 01/01/1995</string>
+    <string name="genderMe">Giới tính: Nam</string>
+    //tùng
+    <string name="nameTung">Họ và tên: Nguyễn Thanh Tùng</string>
+    <string name="schoolTung">Trường: FPT University</string>
+    <string name="birthTung">Năm sinh: 28/10/1995</string>
+    <string name="genderTung">Giới tính: Nam</string>
+    //đậu
+    <string name="nameDau">Họ và tên: Nguyễn Anh Hoàng</string>
+    <string name="schoolDau">Trường: FPT University</string>
+    <string name="birthDau">Năm sinh: 31/10/1995</string>
+    <string name="genderDau">Giới tính: Nam</string>
+</resources>
