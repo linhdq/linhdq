@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Homework</string>
+    <string-array name="place">
+        <item>Ha Noi</item>
+        <item>Ha Nam</item>
+        <item>Hai Phong</item>
+        <item>Hung Yen</item>
+        <item>Nam Dinh</item>
+        <item>Ninh Binh</item>
+        <item>Hue</item>
+        <item>Nha Trang</item>
+        <item>TP Ho Chi Minh</item>
+    </string-array>
+</resources>
