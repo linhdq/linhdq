@@ -43,6 +43,7 @@ public class AddActivity extends AppCompatActivity implements AdapterView.OnItem
         simpleDateFormat = new SimpleDateFormat("MM / dd / yyyy");
         connectControl();
         setDataToControl();
+        getSupportActionBar().hide();
     }
 
     void connectControl() {

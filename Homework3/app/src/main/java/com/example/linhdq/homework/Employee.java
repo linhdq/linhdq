@@ -34,8 +34,8 @@ public class Employee {
         this.gender = gender;
     }
 
-    public int getAge() {
-        return age;
+    public String getAge() {
+        return age+"";
     }
 
     public void setAge(int age) {

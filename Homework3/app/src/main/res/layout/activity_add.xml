@@ -25,41 +25,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginRight="10dp">
+                android:layout_marginRight="@dimen/layout_margin_right">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:text="Name: "
+                    android:layout_height="@dimen/layout_height"
+                    android:text="@string/lbName"
                     android:gravity="center_vertical"
                     />
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:text="Gender: "
+                    android:layout_height="@dimen/layout_height"
+                    android:text="@string/lbGender"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/layout_margin_top"
                     />
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:text="Birth date: "
+                    android:layout_height="@dimen/layout_height"
+                    android:text="@string/lbBirthdate"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/layout_margin_top"
                     />
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:text="Birth place: "
+                    android:layout_height="@dimen/layout_height"
+                    android:text="@string/lbBirthPlace"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/layout_margin_top"
                     />
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:text="Hobby: "
+                    android:layout_height="@dimen/layout_height"
+                    android:text="@string/lbHobby"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/layout_margin_top"
                     />
             </LinearLayout>
             <LinearLayout
@@ -69,23 +69,23 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/layout_height"
                     android:id="@+id/txtName"
                     android:gravity="center_vertical"
                     android:inputType="textNoSuggestions"
                     />
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/layout_height"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:id="@+id/radioG"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/layout_margin_top"
                     >
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Male"
+                        android:text="@string/gender_Male"
                         android:id="@+id/radioMale"
                         android:layout_weight="1"
 
@@ -93,25 +93,25 @@
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Female"
+                        android:text="@string/gender_Female"
                         android:id="@+id/radioFemale"
                         android:layout_weight="1"
                         />
                 </RadioGroup>
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/layout_height"
                     android:id="@+id/btnbirthDay"
                     android:gravity="center_vertical"
                     style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/layout_margin_top"
                     ></Button>
                 <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/layout_height"
                     android:id="@+id/birthPlace"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/layout_margin_top"
                     ></Spinner>
 
                 <LinearLayout
@@ -128,13 +128,13 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Music"
+                            android:text="@string/hobby_Music"
                             android:id="@+id/cbMusic"
                             />
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Movie"
+                            android:text="@string/hobby_Movie"
                             android:id="@+id/cbMovie"
                             />
                     </LinearLayout>
@@ -146,13 +146,13 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Shopping"
+                            android:text="@string/hobby_Shopping"
                             android:id="@+id/cbShopping"
                             />
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Other"
+                            android:text="@string/hobby_Other"
                             android:id="@+id/cbOther"
                             />
                     </LinearLayout>
@@ -170,7 +170,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Add"
+            android:text="@string/add_new"
             android:id="@+id/btnAdd"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:textColor="#009688"
@@ -180,7 +180,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Back"
+            android:text="@string/back"
             android:id="@+id/btnBack"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:textColor="#009688"

@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">Homework</string>
+    <string name="lbName">Name:</string>
+    <string name="lbGender">Gender:</string>
+    <string name="lbBirthdate">Birth date:</string>
+    <string name="lbBirthPlace">Borth place:</string>
+    <string name="lbHobby">Hobby:</string>
+    <string name="add_new">Add</string>
+    <string name="back">Back</string>
+    <string name="gender_Male">Male</string>
+    <string name="gender_Female">Female</string>
+    <string name="hobby_Music">Music</string>
+    <string name="hobby_Movie">Movie</string>
+    <string name="hobby_Shopping">Shopping</string>
+    <string name="hobby_Other">Other</string>
+    <string name="menu_add_new_employee">Add New Employee</string>
+    <string name="menu_view_employee_list">View Employee List</string>
+    <string name="menu_exit">Exit</string>
     <string-array name="place">
         <item>Ha Noi</item>
         <item>Ha Nam</item>
