@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Homework04</string>
+    <string name="btnShow">Show</string>
+    <string name="btn_hide">Hide</string>
+    <string name="close">X</string>
+</resources>

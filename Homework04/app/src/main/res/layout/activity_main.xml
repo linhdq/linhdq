@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.linhdq.homework04.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnShow"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btnShow"
+            android:textColor="#009688"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/btnHide"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btn_hide"
+            android:textColor="#009688"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutButton"
+        android:background="#424242">
+
+        <include
+            android:id="@+id/nobitaLayout"
+            layout="@layout/nobita"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/nobita_marginBottom"
+            android:layout_marginLeft="@dimen/nobita_marginLeft"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        <include
+            android:id="@+id/shizukaLayout"
+            layout="@layout/shizuka"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/shizuka_marginBottom"
+            android:layout_marginLeft="@dimen/shizuka_marginRight"
+            android:layout_marginRight="@dimen/shizuka_marginRight"
+            android:layout_marginTop="@dimen/shizuka_marginTop" />
+
+        <include
+            android:id="@+id/doraemonLayout"
+            layout="@layout/doraemon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/nobita_marginLeft"
+            android:layout_marginTop="@dimen/doraemon_marginTop" />
+    </FrameLayout>
+</RelativeLayout>

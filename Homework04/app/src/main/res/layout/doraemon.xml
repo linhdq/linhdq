@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0">
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btnExitDoraemon"
+        android:text="@string/close"
+        android:textSize="@dimen/text_size"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FAFAFA"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_"
+        android:layout_marginRight="@dimen/margin_"
+        android:layout_marginBottom="@dimen/margin_"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:layout_below="@id/btnExitDoraemon"
+        android:src="@mipmap/doraemon"
+        />
+</RelativeLayout>

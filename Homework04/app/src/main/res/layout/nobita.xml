@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCAAA4">
+
+    <Button
+        android:id="@+id/btnExitNobita"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_"
+        android:layout_marginRight="@dimen/margin_"
+        android:layout_marginTop="@dimen/margin_"
+        android:background="@drawable/custom_button"
+        android:text="@string/close"
+        android:textColor="#FAFAFA"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnExitNobita"
+        android:src="@mipmap/nobita" />
+</RelativeLayout>
