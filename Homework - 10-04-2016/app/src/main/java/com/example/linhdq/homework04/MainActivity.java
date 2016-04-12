@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_show;
     private Button btn_hide;
     private RelativeLayout rLayout_nobita, rLayout_doraemon, rLayout_shizuka;
-
+    private FrameLayout.LayoutParams params_shizuka, params_doraemon,
+            params_nobita, params_shizuka_temp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +35,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rLayout_doraemon = (RelativeLayout) findViewById(R.id.doraemonLayout);
         rLayout_nobita = (RelativeLayout) findViewById(R.id.nobitaLayout);
         rLayout_shizuka = (RelativeLayout) findViewById(R.id.shizukaLayout);
+        params_shizuka_temp = params_shizuka = (FrameLayout.LayoutParams) rLayout_shizuka.getLayoutParams();
+        params_nobita= (FrameLayout.LayoutParams) rLayout_nobita.getLayoutParams();
+        params_doraemon = (FrameLayout.LayoutParams) rLayout_doraemon.getLayoutParams();
         btn_doraemon.setOnClickListener(this);
         btn_shizuka.setOnClickListener(this);
         btn_nobita.setOnClickListener(this);
         btn_show.setOnClickListener(this);
         btn_hide.setOnClickListener(this);
     }
+    private void changeMarginLayout(RelativeLayout layout) {
+        if (layout == rLayout_doraemon) {
+            if (rLayout_shizuka.getVisibility() == View.VISIBLE) {
+                rLayout_shizuka.setLayoutParams(params_doraemon);
+                if (rLayout_nobita.getVisibility() == View.VISIBLE) {
+                    rLayout_nobita.setLayoutParams(params_shizuka);
+                }
+            } else if (rLayout_nobita.getVisibility() == View.VISIBLE) {
+                rLayout_nobita.setLayoutParams(params_doraemon);
+            }
+            return;
+        }
+        if (layout == rLayout_shizuka) {
+            if (rLayout_doraemon.getVisibility() == View.VISIBLE) {
+                rLayout_nobita.setLayoutParams(params_shizuka);
+            } else {
+                rLayout_nobita.setLayoutParams(params_doraemon);
+            }
+            return;
+        }
+    }
 
+    private void restoreMarginLayout() {
+        rLayout_nobita.setLayoutParams(params_nobita);
+        rLayout_shizuka.setLayoutParams(params_shizuka_temp);
+    }
+
+    private void setVisible(int visible) {
+        rLayout_nobita.setVisibility(visible);
+        rLayout_shizuka.setVisibility(visible);
+        rLayout_doraemon.setVisibility(visible);
+    }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -50,22 +85,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.btnExitDoraemon: {
                 rLayout_doraemon.setVisibility(View.GONE);
+                changeMarginLayout(rLayout_doraemon);
                 break;
             }
             case R.id.btnExitShizuka: {
                 rLayout_shizuka.setVisibility(View.GONE);
+                changeMarginLayout(rLayout_shizuka);
                 break;
             }
             case R.id.btnShow: {
-                rLayout_nobita.setVisibility(View.VISIBLE);
-                rLayout_shizuka.setVisibility(View.VISIBLE);
-                rLayout_doraemon.setVisibility(View.VISIBLE);
+                restoreMarginLayout();
+                setVisible(View.VISIBLE);
                 break;
             }
             case R.id.btnHide: {
-                rLayout_doraemon.setVisibility(View.GONE);
-                rLayout_shizuka.setVisibility(View.GONE);
-                rLayout_nobita.setVisibility(View.GONE);
+                setVisible(View.GONE);
                 break;
             }
 
